@@ -37,7 +37,7 @@ class App
     $data = array_merge($um->resolve(), $dois->resolve(), $tres->resolve());
     
     if($this->test_mode) return $data;
-    return $this->show(array_merge($um->resolve(), $dois->resolve(), $tres->resolve())) ;
+    return $this->show($data) ;
   }
 
 }

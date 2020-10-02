@@ -91,4 +91,10 @@ use App\Googlon;
         $this->assertEquals(false, $this->googlon->isBeautifulNumber(541663264));
     }
 
+    public function testSetValue()
+    {   
+        $this->googlon->setValue($new_value = "ngvzwxt");
+        $this->assertEquals($new_value, $this->googlon->getValue($new_value));
+    }
+
  }

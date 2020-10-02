@@ -76,7 +76,6 @@ class Googlon
    * setValue function
    *
    * @param string $value
-   *
    * @return void
    */
   public function setValue(string $value = '')
@@ -134,7 +133,6 @@ class Googlon
    * isFooType function
    *
    * @param string $letter
-   *
    * @return bool
    */
   public function isFooType(string $letter) : bool
@@ -150,7 +148,7 @@ class Googlon
    */
   public function isPreposition(string $word) : bool
   { 
-    return (($this->isFooType(substr($word, -1)) && !strpos($word, 'l') && strlen($word) === 4) );
+    return ($this->isFooType(substr($word, -1)) && !strpos($word, 'l')) && (strlen($word) === 4) ;
   }
 
 
